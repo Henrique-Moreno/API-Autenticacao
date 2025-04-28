@@ -6,7 +6,7 @@ Esse projeto é uma API de autenticação segura, desenvolvida para ser simples 
 
 Usamos o **Spring Boot** para criar a API porque ele facilita muito o desenvolvimento, trazendo várias ferramentas prontas para usar. A ideia foi criar um sistema onde o usuário pode se cadastrar, fazer login e confirmar sua identidade com um segundo fator de autenticação (o OTP). Para deixar mais seguro, a senha é criptografada com **SHA256**, e também verificamos o IP do usuário. Se a senha estiver errada, o sistema gera um captcha de 6 dígitos. O OTP, que seria enviado por email em um sistema real, aqui é mostrado no console e registrado no arquivo `log.txt`. Todas as ações, como cadastros e logins, também são salvas nesse arquivo para acompanhamento.
 
-## Ferramentas que usamos
+## Ferramentas
 
 - **Spring Boot Starter Data JPA**: Usamos isso para conectar a API ao banco de dados MySQL de forma simples, usando o Hibernate para criar e gerenciar a tabela de usuários automaticamente.
 - **Spring Boot Starter Security**: Essa ferramenta adiciona segurança à API, ajudando a proteger os endpoints e garantindo que só usuários autenticados acessem certas partes.
